@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'missions.dart';
+import 'mission.dart';
 import 'missions_cubit.dart';
 
 class MissionsPage extends StatelessWidget {
@@ -39,7 +39,6 @@ class MissionsPage extends StatelessWidget {
               rtl: true,
               textController: searchInputController,
               onSuffixTap: () {
-                print("hui");
                 searchInputController.clear();
                 context.read<MissionsCubit>().search("");
               },
